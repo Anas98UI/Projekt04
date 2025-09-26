@@ -1,0 +1,156 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    line-height: 30px;
+}
+.container{
+    width:100%;
+    min-height: 100vh;
+    padding: 10px;
+    background:linear-gradient(120deg,rgb(105, 76, 151),rgb(138, 215, 177))
+
+}
+.todoApp{
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    margin:150px auto 25px;
+    padding: 40px 30px 70px ;
+    border-radius: 20px;
+
+}
+.todoApp h2{
+    color:rgb(41, 130, 144);
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.underline{
+    border-bottom: 3px solid rgb(234, 107, 56);
+
+
+}
+.todoApp h2 img{
+    width: 30px;
+    margin-left: 10px;
+    padding-bottom: 7px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    width: 100%;
+    padding-left: 10px;
+    margin-bottom: 25px;
+    background-color: rgb(200, 224, 239);
+
+    
+
+}
+#input-box{
+    border: none;
+    flex:1;
+    outline: none;
+    background: transparent;
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 20px;
+    color: rgba(0, 0, 0, 0.803);
+
+    
+}
+button{
+    border: none;
+    outline: none;
+    padding: 13px 50px;
+    background:linear-gradient(120deg,rgb(233, 108, 31),rgb(55, 122, 88));
+    color: white;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+ul li{
+    padding: 20px 20px 20px 50px;
+    user-select: none;
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+    border-radius: 40px;
+    margin-bottom: 7px;
+    background:linear-gradient(120deg,rgb(207, 169, 142),rgb(168, 230, 241))
+
+
+
+}
+ul li::before{
+    content:'';
+    position:absolute;
+    height:28px;
+    width:28px;
+    border-radius:50%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(img/unchecked.png);
+    top: 21px;
+    left: 6px;
+    
+
+}
+ul li.checked{
+    text-decoration: line-through;
+
+}
+ul li.checked::before{
+    background-image: url(img/checked.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 23px;
+    line-height: 24px;
+    text-align: center;
+    top: 23px;
+
+
+}
+ul li span:hover{
+    background-color: rgba(233, 232, 230, 0.188);
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
